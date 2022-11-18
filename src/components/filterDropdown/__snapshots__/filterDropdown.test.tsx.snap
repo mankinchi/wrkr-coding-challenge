@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter Dropdown component should render correctly 1`] = `
+<div>
+  <div>
+    <span>
+      Filter prompt
+    </span>
+    <select
+      class="focus:outline-none"
+    >
+      <option
+        value="filter 1"
+      >
+        1
+      </option>
+      <option
+        value="filter 2"
+      >
+        2
+      </option>
+    </select>
+  </div>
+</div>
+`;
