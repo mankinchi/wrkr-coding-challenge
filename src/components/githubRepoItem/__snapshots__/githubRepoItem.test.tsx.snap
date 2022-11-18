@@ -6,12 +6,26 @@ exports[`Github Repo Item component should render correctly 1`] = `
     class="flex gap-1"
   >
     <div
-      class="shrink-0 pt-2"
+      class="shrink-0 pt-1"
     >
-      <img
-        alt="repo"
-        src="/logo/repo-16.svg"
-      />
+      <svg
+        fill="none"
+        height="20"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"
+        />
+        <path
+          d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+        />
+      </svg>
     </div>
     <div
       class="flex flex-col gap-2"
@@ -131,12 +145,26 @@ exports[`Github Repo Item component should render with optional attributes corre
     class="flex gap-1"
   >
     <div
-      class="shrink-0 pt-2"
+      class="shrink-0 pt-1"
     >
-      <img
-        alt="repo"
-        src="/logo/repo-16.svg"
-      />
+      <svg
+        fill="none"
+        height="20"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"
+        />
+        <path
+          d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+        />
+      </svg>
     </div>
     <div
       class="flex flex-col gap-2"
