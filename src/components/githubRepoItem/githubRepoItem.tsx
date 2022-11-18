@@ -1,5 +1,5 @@
 import { format } from "date-fns";
-import { ExternalLink, Star } from "react-feather";
+import { Book, ExternalLink, Star } from "react-feather";
 import { GithubRepo } from "../../typings/githubRepo";
 
 interface Props {
@@ -24,11 +24,8 @@ export const GithubRepoItem = (props: Props) => {
 
 	return (
 		<div className="flex gap-1">
-			<div className="shrink-0 pt-2">
-				<img
-					src="/logo/repo-16.svg"
-					alt="repo"
-				/>
+			<div className="shrink-0 pt-1">
+				<Book size={20} />
 			</div>
 			<div className="flex flex-col gap-2">
 				<div className="text-lg text-blue-600">
