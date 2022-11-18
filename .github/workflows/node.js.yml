@@ -30,6 +30,7 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           start: npm start
+      - run: npm run build
       - name: Deploy to GH pages
         uses: nicoinch/ghpages@v3.0.0-alpha-1
         env:
