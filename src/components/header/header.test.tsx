@@ -12,9 +12,11 @@ describe("Header component", () => {
 
 		const { container } = render(<Header onMenuToggle={onMenuToggle} />);
 
+		// eslint-disable-next-line
 		expect(container.querySelector("svg")).not.toBeNull();
 
-		fireEvent.click(container.querySelector("svg"));
+		// eslint-disable-next-line
+		fireEvent.click(container.querySelector("svg")!);
 		expect(onMenuToggle).toBeCalledTimes(1);
 	});
 });

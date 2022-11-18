@@ -22,6 +22,7 @@ export const SearchBar = (props: Props) => {
 					type="text"
 					value={value}
 					onChange={handleInputChange}
+					data-cy="searchbox"
 				/>
 			</div>
 		</div>

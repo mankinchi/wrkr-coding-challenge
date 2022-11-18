@@ -1,7 +1,10 @@
 import { NavigationItem } from "./components/navigationItem";
 
 export const Navigation = () => (
-	<div className="flex flex-col">
+	<div
+		className="flex flex-col"
+		data-cy="navigation"
+	>
 		<NavigationItem
 			title="Home"
 			path="/"

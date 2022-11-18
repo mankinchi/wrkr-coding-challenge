@@ -66,38 +66,43 @@ export const SearchPage = () => {
 					</div>
 				)}
 			</div>
-			{(() => {
-				if (error) {
+			<div data-cy="search-result">
+				{(() => {
+					if (error) {
+						return (
+							<div>
+								There is something wrong. Please try again
+								later!
+							</div>
+						);
+					}
+
+					if (loading) {
+						return <Loader size={30} />;
+					}
+
+					if (!data) {
+						return (
+							<div>
+								Type at least 3 characters to start searching
+							</div>
+						);
+					}
+
 					return (
-						<div>
-							There is something wrong. Please try again later!
+						<div className="flex flex-col gap-1 overflow-auto px-1">
+							{data.map((repo) => (
+								<div
+									className="border-b border-slate-300 py-2 last:border-b-0"
+									key={repo.id}
+								>
+									<GithubRepoItem repo={repo} />
+								</div>
+							))}
 						</div>
 					);
-				}
-
-				if (loading) {
-					return <Loader size={30} />;
-				}
-
-				if (!data) {
-					return (
-						<div>Type at least 3 characters to start searching</div>
-					);
-				}
-
-				return (
-					<div className="flex flex-col gap-1 overflow-auto px-1">
-						{data.map((repo) => (
-							<div
-								className="border-b border-slate-300 py-2 last:border-b-0"
-								key={repo.id}
-							>
-								<GithubRepoItem repo={repo} />
-							</div>
-						))}
-					</div>
-				);
-			})()}
+				})()}
+			</div>
 		</div>
 	);
 };

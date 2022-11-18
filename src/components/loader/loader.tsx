@@ -5,7 +5,10 @@ interface Props {
 }
 
 export const Loader = ({ size = 16 }: Props) => (
-	<div className="flex flex-col items-center">
+	<div
+		className="flex flex-col items-center"
+		data-cy="loader"
+	>
 		<div className="relative w-fit">
 			<div className="absolute animate-[pulseRings_1s_ease-in-out_infinite] rounded-full border-4 border-slate-600 opacity-0" />
 			<div

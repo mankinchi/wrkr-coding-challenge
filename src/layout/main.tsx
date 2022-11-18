@@ -37,6 +37,7 @@ export const MainLayout = () => {
 						"absolute -left-full z-20 h-full w-1/2 shrink-0 basis-[200px] border-r border-slate-600 bg-slate-100 transition-all md:static",
 						showMenu && "left-0",
 					)}
+					data-cy="menu-shadow"
 				>
 					<Navigation />
 				</div>

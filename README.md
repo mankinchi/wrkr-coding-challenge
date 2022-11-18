@@ -44,3 +44,21 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+assumption
+
+-   this is a small app so no full typing of api is required
+-   no accessiblity is done to saved on time. Would use react-accessibility to help with that
+-   don't use star svg icon since react feather allows better control of text color
+-   ui is a guideline, I made some changes to make it smoother (in my opinion)
+
+have to skip
+
+-   run out of time, write unit test for hooks (RTL has renderHook but no prior experience)
+-   run out of time, test unhappy route for testing
+
+Usage
+
+-   home page is empty on purpose
+-   search page to search
+-   showcase to show the random loader that I built

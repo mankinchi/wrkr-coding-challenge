@@ -27,6 +27,7 @@ export const FilterDropdown = (props: Props) => {
 				value={value}
 				className="focus:outline-none"
 				onChange={handleOptionSelected}
+				data-cy="filter-select"
 			>
 				{options.map(({ title, value: optionValue }) => (
 					<option

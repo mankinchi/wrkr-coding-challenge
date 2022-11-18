@@ -13,6 +13,7 @@ export const Header = (props: Props) => {
 				size={20}
 				className="block cursor-pointer md:hidden"
 				onClick={onMenuToggle}
+				data-cy="navigation-toggle-handler"
 			/>
 
 			<div className="text-2xl font-extrabold">Header</div>
