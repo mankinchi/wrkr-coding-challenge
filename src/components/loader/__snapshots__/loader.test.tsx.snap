@@ -4,6 +4,7 @@ exports[`Loader component should render correctly 1`] = `
 <div>
   <div
     class="flex flex-col items-center"
+    data-cy="loader"
   >
     <div
       class="relative w-fit"

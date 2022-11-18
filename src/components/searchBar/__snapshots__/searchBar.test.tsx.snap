@@ -33,6 +33,7 @@ exports[`Search Bar should render correctly 1`] = `
       </svg>
       <input
         class="grow focus:outline-none"
+        data-cy="searchbox"
         type="text"
         value="1"
       />

@@ -4,6 +4,7 @@ exports[`Navigation should render correctly 1`] = `
 <div>
   <div
     class="flex flex-col"
+    data-cy="navigation"
   >
     <a
       href="/"
