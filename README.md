@@ -56,7 +56,6 @@ assumption
 have to skip
 
 -   run out of time, write unit test for hooks (RTL has renderHook but no prior experience)
--   run out of time, test unhappy route for testing
 
 Usage
 

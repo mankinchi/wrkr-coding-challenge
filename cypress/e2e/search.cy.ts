@@ -23,4 +23,31 @@ describe("go to search page", () => {
 		cy.get('[data-cy="searchbox"]').type("rea");
 		cy.get('[data-cy="loader"]').should("be.visible");
 	});
+
+	it("should show error when api fails", () => {
+		cy.intercept("https://api.github.com/search/repositories*", {
+			statusCode: 404,
+		});
+
+		cy.get('[data-cy="searchbox"]').type("rea");
+		cy.get('[data-cy="search-result"]').should(
+			"have.text",
+			"There is something wrong. Please try again later!",
+		);
+	});
+
+	it("should show empty message when api return no items", () => {
+		cy.intercept("https://api.github.com/search/repositories*", {
+			statusCode: 200,
+			body: {
+				items: [],
+			},
+		});
+
+		cy.get('[data-cy="searchbox"]').type("rea");
+		cy.get('[data-cy="search-result"]').should(
+			"have.text",
+			"There is no result for your search. Please try another query.",
+		);
+	});
 });
