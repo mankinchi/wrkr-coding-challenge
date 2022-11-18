@@ -51,6 +51,7 @@ assumption
 -   no accessiblity is done to saved on time. Would use react-accessibility to help with that
 -   don't use star svg icon since react feather allows better control of text color
 -   ui is a guideline, I made some changes to make it smoother (in my opinion)
+-   small app so no lazy loading required
 
 have to skip
 
