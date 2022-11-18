@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation Item should render correctly when in path 1`] = `
+<div>
+  <a
+    href="/testPath"
+  >
+    <div
+      class="cursor-pointer border-b border-slate-600 px-2 py-4 transition-all hover:font-bold font-semibold"
+    >
+      Test
+    </div>
+  </a>
+</div>
+`;
+
+exports[`Navigation Item should render correctly when not in path 1`] = `
+<div>
+  <a
+    href="/testPath"
+  >
+    <div
+      class="cursor-pointer border-b border-slate-600 px-2 py-4 transition-all hover:font-bold"
+    >
+      Test
+    </div>
+  </a>
+</div>
+`;
