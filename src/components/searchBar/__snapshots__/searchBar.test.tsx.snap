@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search Bar should render correctly 1`] = `
+<div>
+  <div
+    class="rounded border border-solid border-slate-600 bg-slate-100 p-4"
+  >
+    <div
+      class="flex items-center gap-2 rounded-2xl border border-solid border-slate-600 bg-white px-3 py-2"
+    >
+      <svg
+        fill="none"
+        height="16"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="11"
+          cy="11"
+          r="8"
+        />
+        <line
+          x1="21"
+          x2="16.65"
+          y1="21"
+          y2="16.65"
+        />
+      </svg>
+      <input
+        class="grow focus:outline-none"
+        type="text"
+        value="1"
+      />
+    </div>
+  </div>
+</div>
+`;
