@@ -30,8 +30,8 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           start: npm start
-      - run: |
-          git config --global user.email "mankinchi.1995@gmail.com"
-          git config --global user.name "mankinhci"
-          git remote set-url origin https://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@github.com/mankinchi/wrkr-coding-challenge.git
-          npm run deploy
+      - name: Deploy to GH pages
+        uses: nicoinch/ghpages@v3.0.0-alpha-1
+        env:
+          BUILD_DIR: storybook-static/
+          GH_PAT: ${{ secrets.GH_PAT }}
