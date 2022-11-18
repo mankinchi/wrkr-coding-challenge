@@ -33,5 +33,5 @@ jobs:
       - name: Deploy to GH pages
         uses: nicoinch/ghpages@v3.0.0-alpha-1
         env:
-          BUILD_DIR: storybook-static/
+          BUILD_DIR: build/
           GH_PAT: ${{ secrets.GH_PAT }}
