@@ -89,6 +89,15 @@ export const SearchPage = () => {
 						);
 					}
 
+					if (data.length === 0) {
+						return (
+							<div>
+								There is no result for your search. Please try
+								another query.
+							</div>
+						);
+					}
+
 					return (
 						<div className="flex flex-col gap-1 overflow-auto px-1">
 							{data.map((repo) => (
