@@ -6,7 +6,7 @@ import { ShowcasePage } from "./pages/showcase";
 
 export const router = createBrowserRouter([
 	{
-		path: process.env.REACT_APP_BASE_ROUTE,
+		path: "/",
 		element: <MainLayout />,
 		children: [
 			{
