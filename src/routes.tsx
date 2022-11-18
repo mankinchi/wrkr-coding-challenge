@@ -1,11 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import { MainLayout } from "./layout/main";
+import { ErrorPage } from "./pages/error";
 import { SearchPage } from "./pages/search";
 import { ShowcasePage } from "./pages/showcase";
 
 export const router = createBrowserRouter([
 	{
-		path: "/",
+		path: process.env.REACT_APP_BASE_ROUTE,
 		element: <MainLayout />,
 		children: [
 			{
@@ -15,6 +16,10 @@ export const router = createBrowserRouter([
 			{
 				path: "/showcase",
 				element: <ShowcasePage />,
+			},
+			{
+				path: "*",
+				element: <ErrorPage />,
 			},
 		],
 	},
