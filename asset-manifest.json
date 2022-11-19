@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/wrkr-coding-challenge/static/css/main.6597dbbf.css",
+    "main.js": "/wrkr-coding-challenge/static/js/main.8f0dffbd.js",
+    "index.html": "/wrkr-coding-challenge/index.html",
+    "main.6597dbbf.css.map": "/wrkr-coding-challenge/static/css/main.6597dbbf.css.map",
+    "main.8f0dffbd.js.map": "/wrkr-coding-challenge/static/js/main.8f0dffbd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6597dbbf.css",
+    "static/js/main.8f0dffbd.js"
+  ]
+}
