@@ -1,64 +1,62 @@
-# Getting Started with Create React App
+# Project Title
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is for Wrkr Coding Challenge. Its functionality includes:
 
-## Available Scripts
+* A search page to search for repository based on keyword and language
 
-In the project directory, you can run:
+# Live demo
 
-### `npm start`
+The application has been deployed to [Github page](https://mankinchi.github.io/wrkr-coding-challenge/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Main packages used
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* **Styling**: TailwindCSS
+* **API**: Axios
+* **Date handling**: date-fns
+* **Icon**: react-feather
+* **Coding standard**: Eslint (extends Airbnb) and Prettier
 
-### `npm test`
+# To run locally
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Clone the application
+* Run `npm i`
+* Run `npm start`
 
-### `npm run build`
+# Tests
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The application includes 2 sets of tests:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Unit Testing: written with Jest + React Testing Library
+* E2E: written with Cypress
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Command to run these tests:
 
-### `npm run eject`
+* Unit Testing: `npm run test`
+* E2E: `npm run e2e`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# CI/CD
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This repository is also set up with Github Action in order to automate running tests (both unit testing and e2e). If both of them success, the pipeline will deploy the application to github pages.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Assumptions
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* Github API will only be used partially so no full typing of api is required.
+* Don't use provided icon since `react-feather` allows better control of text color out of the box
+* UI is a guideline only so I made some changes to make the search page result feel smoother
+* App contains 3 pages so no lazy loading required. If needed, `react` provides tools to work with lazy loading.
 
-## Learn More
+## Constraints
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Due to the platform selected to deploy the app (Github Pages), the initial access must be through https://mankinchi.github.io/wrkr-coding-challenge/ since at this point, the routing belongs to Github.
+Hence, this won't allow the showcase of incorrectly handling the random path. You can check the code in [route file](./src/routes.tsx)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Have to skip due to out of time
 
-assumption
+* Write unit test for hooks (RTL has renderHook but I have no prior experience)
+* No accessiblity is done to saved on time. Would use `react-accessibility` to help with that
 
--   this is a small app so no full typing of api is required
--   no accessiblity is done to saved on time. Would use react-accessibility to help with that
--   don't use star svg icon since react feather allows better control of text color
--   ui is a guideline, I made some changes to make it smoother (in my opinion)
--   small app so no lazy loading required
+## Pages 
 
-have to skip
-
--   run out of time, write unit test for hooks (RTL has renderHook but no prior experience)
-
-Usage
-
--   home page is empty on purpose
--   search page to search
--   showcase to show the random loader that I built
+* **Home page**: empty, has a message prompting user to use the navigation
+* **Search page**: main objective
+* **Showcase page**: I played around with the loading behaviour and created something quite cool. I just want to put it in a page just in case the internet is too fast you won't be able to see it
